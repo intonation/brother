@@ -1,0 +1,838 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brother CRM Email #2</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 100% !important;
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            color: #4a4a4a;
+            line-height: 24px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 21px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .p--large {
+            font-size: 16px;
+        }
+
+        img {
+            display: block;
+        }
+
+        .container {
+            width: 640px;
+        }
+
+        .container-wide {
+            width: 800px;
+        }
+
+        .column-half {
+            vertical-align: top;
+            width: 50%;
+        }
+
+        .column-third {
+            vertical-align: top;
+            width: 33.33%;
+        }
+
+        .column-half-with-divider {
+            vertical-align: top;
+            width: 290px;
+        }
+
+        .column-divider {
+            width: 20px;
+        }
+
+        .column__border {
+            border-left: 10px solid #ffffff;
+            border-right: 10px solid #ffffff;
+        }
+
+        .column__border-left {
+            border-left: 10px solid #ffffff;
+        }
+
+        .column__border-right {
+            border-right: 10px solid #ffffff;
+        }
+
+        .link {
+            color: #205ec1;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            border: 1px solid #205ec1;
+            display: inline-block;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-info {
+            border: 1px solid #205ec1;
+            display: inline-block;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .promo-wide__image-sm {
+            display: none;
+            height: 0;
+            width: 0;
+        }
+
+        .promo-wide__image-lg {
+            width: 400px;
+        }
+
+        @media screen and (max-width: 799px) {
+            .wide-text {
+                max-width: 520px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .outer {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .outer-wide {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .full-width-image img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .header-text-small {
+            padding: 20px 40px 0;
+        }
+
+        @media screen and (min-width: 800px) {
+            .header-text-small {
+                padding: 40px 40px 0;
+            }
+        }
+
+        /*
+    ============================
+
+    TWO COLUMN
+
+    */
+
+        /* http://bit.ly/2dBNmEf */
+
+        .tb--two-column {
+            font-size: 0;
+            text-align: center;
+        }
+
+        .tb--two-column .tb__column {
+            display: inline-block;
+            max-width: 300px;
+            vertical-align: top;
+            width: 100%;
+        }
+
+        .tb--two-column .tb__column--wide,
+        .tb--two-column .tb__column--w-gap,
+        .tb--two-column .tb__column--wide-w-gap {
+            display: inline-block;
+            margin-bottom: 20px;
+            max-width: 290px;
+            vertical-align: top;
+            width: 100%;
+        }
+
+
+        @media screen and (min-width: 600px) {
+            .tb--two-column .tb__column--w-gap.first-col,
+            .tb--two-column .tb__column--wide-w-gap.first-col {
+                margin-right: 20px;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            .tb--two-column .tb__column--wide-w-gap,
+            .tb--two-column .tb__column--wide {
+                display: inline-block;
+                margin-bottom: 20px;
+                max-width: 380px;
+                vertical-align: top;
+                width: 100%;
+            }
+
+            .tb--two-column .tb__column--wide {
+                max-width: 400px;
+                margin-bottom: 0;
+            }
+        }
+
+        .tb__contents {
+            width: 100%;
+        }
+
+        .tb--two-column .tb__contents {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .tb--two-column img {
+            margin: 0 auto;
+        }
+
+        .tb--two-column .tb__text {
+            padding-top: 10px;
+        }
+
+        /* 
+    ==================
+    /END TWO COLUMN */
+
+        @media screen and (max-width: 839px) {
+            .promo-wide__image-lg {
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-device-width: 839px) {
+            .promo-wide__image-lg {
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 639px) {
+            .promo-wide__image-sm {
+                display: block;
+                height: auto;
+                width: 100%;
+            }
+
+            .promo-wide__image-lg {
+                display: none;
+                height: 0;
+                width: 0;
+            }
+        }
+
+        @media screen and (max-device-width: 639px) {
+            .promo-wide__image-sm {
+                display: block;
+                height: auto;
+                width: 100%;
+            }
+
+            .promo-wide__image-lg {
+                display: none;
+                height: 0;
+                width: 0;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .container-wide {
+                width: 640px;
+            }
+        }
+
+        @media screen and (max-device-width: 800px) {
+            .container-wide {
+                width: 640px;
+            }
+        }
+
+        @media screen and (max-width: 639px) {
+            .container,
+            .container-wide {
+                width: 100%;
+            }
+
+            .column-half,
+            .column-third,
+            .column-half-with-divider {
+                display: block;
+                width: 100%;
+            }
+
+            .column__border,
+            .column__border-left,
+            .column__border-right {
+                border: 0;
+            }
+
+            .column-divider {
+                display: block;
+                height: 40px;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-device-width: 639px) {
+            .container,
+            .container-wide {
+                width: 100%;
+            }
+
+            .column-half,
+            .column-third,
+            .column-half-with-divider {
+                display: block;
+                width: 100%;
+            }
+
+            .column__border,
+            .column__border-left,
+            .column__border-right {
+                border: 0;
+            }
+
+            .column-divider {
+                display: block;
+                height: 40px;
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body bgcolor="#f5f6f8">
+    <table bgcolor="#00349B" border="0" cellpadding="0" cellspacing="0" class="blue-bar" role="presentation" width="100%">
+        <tbody>
+            <tr>
+
+                <td align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" class="container-wide" role="presentation">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" height="15"><img alt="" height="15" src="images/spacer.png" width="15"></td>
+                            </tr>
+                            <tr>
+                                <td width="20">&nbsp;</td>
+                                <td>
+                                    <a href="https://www.brother.co.uk/" target="_blank" style="
+                            float: right;
+                            "><img alt="Brother" height="30" src="images/brother-logo.png" width="80" style="align: right;"></a>
+                                </td>
+                                <td width="20">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" height="15"><img alt="" height="15" src="images/spacer.png" width="15"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table bgcolor="#fc0050" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        <tbody>
+            <tr>
+                <td align="center">
+
+                    <table class="outer-wide" align="center" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td class="tb--two-column">
+                                    <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%">
+                        <tr>
+                        <td width="50%" valign="top">
+                        <![endif]-->
+                                    <div class="tb__column--wide">
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="header-text-small">
+                                                        <h1 style="font-size: 26px; line-height: 32px; font-weight: 500; margin-bottom: 10px; color: #ffffff;">For all your labelling needs</h1>
+                                                        <p style="font-size: 14px; line-height: 25px; color: #ffffff;">Brother labellers are the go-to labelling solution for organisations from a range of sectors, including healthcare, retail, hospitality and beyond.</p>
+                                                        <br>
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tb__column--wide">
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="column-half">
+                                                        <a href="https://www.brother.co.uk/" target="_blank" style="
+                                        display: block;
+                                        "><img alt="" class="" src="images/header1.jpg" style="width: 100%;"></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="50%" valign="top">
+                        <![endif]-->
+
+                                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                    <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table class="outer-wide" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td class="tb--two-column">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%">
+                        <tr>
+                        <td width="50%" valign="top">
+                        <![endif]-->
+                    <div class="tb__column--wide">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="inner">
+                                        <table class="tb__contents" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding: 30px; padding-right:0px">
+                                                        <h2 style="font-size:21px;line-height:25px;font-weight:800;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0; margin-bottom:20px; color: #264c93">Efficient labelling for your customers' office</h2>
+
+                                                        <p style="line-height:21px;font-size:14px;margin-bottom:10px;margin-top:0;margin-right:0;margin-left:0;">Brother P-touch labelling machines are the perfect solution for your customers' busy offices, as well as for your profit margins and with a fantastic 30% off selected models you’d be crazy not to take advantage of this offer. From labelling folders to name badges, ofﬁce equipment to shelves we’ll have the right machine for their needs. Don’t miss out.<br><br>Contact your Brother office now or visit <a href="www.brother.eu">www.brother.eu</a></p>
+                                                        <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">
+                                                            <a class="btn-primary" href="https://www.brother.co.uk/labelling" target="_blank" style="margin-top: 20px;">
+                                                                <table bgcolor="#205ec1" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td colspan="3" height="15"><img alt="" height="15" src="images/spacer.png" width="10"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="25"><img alt="" height="10" src="images/spacer.png" width="25"></td>
+                                                                            <td style="color: #ffffff;">Discover more</td>
+                                                                            <td width="25"><img alt="" height="10" src="images/spacer.png" width="25"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td colspan="3" height="15"><img alt="" height="15" src="images/spacer.png" width="10"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="50%" valign="top">
+                        <![endif]-->
+                    <div class="tb__column--wide">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="inner">
+                                        <table class="tb__contents" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="" style="vertical-align:top;">
+                                                        <a href="https://www.brother.co.uk/" target="_blank"><img alt="" class="" width="100%" src="images/psdimages_0007_Layer%201.jpg" style="display:block;"></a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                    <![endif]-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table bgcolor="#f5f6f8" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        <tbody>
+            <tr>
+                <td align="center">
+                    <img alt="" height="20" src="images/spacer.png" width="40">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="outer-wide" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td class="tb--two-column">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%">
+                        <tr>
+                        <td width="50%" valign="top">
+                        <![endif]-->
+                    <div class="tb__column--wide">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="inner">
+                                        <table class="tb__contents" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="" style="vertical-align:top;">
+                                                        <a href="https://www.brother.co.uk/labelling/ptouch-labellers/ptd450vp" target="_blank"><img alt="" class="" width="100%" src="images/psdimages_0006_Layer%202.jpg" style="display:block;"></a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="50%" valign="top">
+                        <![endif]-->
+                    <div class="tb__column--wide">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="inner">
+                                        <table class="tb__contents" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding: 30px;">
+                                                        <h2 style="font-size:21px;line-height:25px;font-weight:500;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0; margin-bottom:20px;">PT-D450VP Professional Desktop Label Printer</h2>
+
+                                                        <p style="line-height:21px;font-size:14px;margin-bottom:10px;margin-top:0;margin-right:0;margin-left:0;">From identification of workplace assets and equipment to ﬁling and name badges, with the PT-D450VP you can quickly generate highly durable labels up to 18mm wide.</p>
+                                                        <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;">
+                                                            <a class="link" href="https://www.brother.co.uk/labelling/ptouch-labellers/ptd450vp" target="_blank" style="color:#0F61E5;font-size:14px;text-transform:none;font-weight:500;text-decoration:none;">Read more &nbsp;<img height="8" src="images/arrow-blue.png" width="5" style="display:inline-block;"></a></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                    <![endif]-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table bgcolor="#f5f6f8" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        <tbody>
+            <tr>
+                <td align="center">
+                    <img alt="" height="20" src="images/spacer.png" width="40">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="outer-wide" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td class="tb--two-column">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%">
+                        <tr>
+                        <td width="50%" valign="top">
+                        <![endif]-->
+                    <div class="tb__column--wide">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="inner">
+                                        <table class="tb__contents" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding: 30px;">
+                                                        <h2 style="font-size:21px;line-height:25px;font-weight:500;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0; margin-bottom: 20px;">PT-D400 Professional Labelling Machine</h2>
+
+
+                                                        <p style="line-height:21px;font-size:14px;margin-bottom:10px;margin-top:0;margin-right:0;margin-left:0;">The P-touch D400 effortlessly produces labels for your office whenever they are required. With its fast print speed and large print height, you can quickly produce bold, easy-to-read labels.</p>
+                                                        <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;"><a class="link" href="https://www.brother.co.uk/labelling/ptouch-labellers/pt-d400" target="_blank" style="color:#0F61E5;font-size:14px;text-transform:none;font-weight:500;text-decoration:none;">Read more &nbsp;<img height="8" src="images/arrow-blue.png" width="5" style="display:inline-block;"></a></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="50%" valign="top">
+                        <![endif]-->
+                    <div class="tb__column--wide">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="inner">
+                                        <table class="tb__contents" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="" style="vertical-align:top;">
+                                                        <a href="https://www.brother.co.uk/labelling/ptouch-labellers/pt-d400" target="_blank"><img alt="" class="" width="100%" src="images/psdimages_0005_Layer%203.jpg" style="display:block;"></a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                    <![endif]-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table bgcolor="#f5f6f8" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        <tbody>
+            <tr>
+                <td align="center">
+                    <img alt="" height="20" src="images/spacer.png" width="40">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="outer-wide" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td class="tb--two-column">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%">
+                        <tr>
+                        <td width="50%" valign="top">
+                        <![endif]-->
+                    <div class="tb__column--wide">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="inner">
+                                        <table class="tb__contents" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="" style="vertical-align:top;">
+                                                        <a href="https://www.brother.co.uk/labelling/ptouch-labellers/pt-d210vp" target="_blank"><img alt="" class="" width="100%" src="images/psdimages_0004_Layer%204.jpg" style="display:block;"></a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="50%" valign="top">
+                        <![endif]-->
+                    <div class="tb__column--wide">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="inner">
+                                        <table class="tb__contents" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding: 30px;">
+                                                        <h2 style="font-size:21px;line-height:25px;font-weight:500;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0; margin-bottom: 20px;">PT-D210VP Desktop Labelling Machine</h2>
+
+
+                                                        <p style="line-height:21px;font-size:14px;margin-bottom:10px;margin-top:0;margin-right:0;margin-left:0;">The compact labelling machine that's quick and simple to use. You can create decorative labels with various patterns using the built-in templates using the easy-to-read graphic display.</p>
+                                                        <p style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;"><a class="link" href="https://www.brother.co.uk/labelling/ptouch-labellers/pt-d210vp" target="_blank" style="color:#0F61E5;font-size:14px;text-transform:none;font-weight:500;text-decoration:none;">Read more &nbsp;<img height="8" src="images/arrow-blue.png" width="5" style="display:inline-block;"></a></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                    <![endif]-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <table bgcolor="#f5f6f8" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        <tbody>
+            <tr>
+                <td align="center">
+                    <img alt="" height="20" src="images/spacer.png" width="40">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table bgcolor="#f5f6f8" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        <tbody>
+            <tr>
+                <td align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" class="outer-wide" role="presentation">
+                        <tbody>
+                            <tr>
+
+                                <td>
+
+                                    <table bgcolor="#fc0050" border="0" cellpadding="40" cellspacing="0" role="presentation" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="wide-text">
+                                                    <h2 style="font-size: 21px; font-weight: 500; line-height: 25px; margin-bottom: 10px; color:white;">In addition to these savings we are also running a competition giving end users the chance to win one of 15 dream holidays when they purchase a P-touch label printer.</h2>
+                                                    <br>
+                                                    <p style="color: white; font-size: 12px">
+                                                        Terms and conditions apply, see <a href="https://www.brother.eu/ptouch30">brother.eu/ptouch30</a> for details. Offer ends 31/03/2019</p>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table bgcolor="#f5f6f8" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        <tbody>
+            <tr>
+                <td align="center">
+                    <table class="container-wide" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <tbody>
+                            <tr>
+                                <td width="20">&nbsp;</td>
+                                <td>
+                                    <table border="0" cellpadding="40" cellspacing="0" role="presentation" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center">
+                                                    <p>
+                                                        <a href="https://plus.google.com/102149743555881613718/" target="_blank"><img height="40" src="images/footer-google-plus.png" style="display: inline-block;" width="40"></a>&nbsp;
+                                                        <a href="https://www.facebook.com/BrotherPrintersUK" target="_blank"><img height="40" src="images/footer-facebook.png" style="display: inline-block;" width="40"></a>&nbsp;
+                                                        <a href="https://www.linkedin.com/company/brother-uk-ltd" target="_blank"><img height="40" src="images/footer-linkedin.png" style="display: inline-block;" width="40"></a>&nbsp;
+                                                        <a href="https://twitter.com/Brother_UK" target="_blank"><img height="40" src="images/footer-twitter.png" style="display: inline-block;" width="40"></a>&nbsp;
+                                                        <a href="http://www.youtube.com/user/BrotherUK" target="_blank"><img height="40" src="images/footer-youtube.png" style="display: inline-block;" width="40"></a>
+                                                    </p>
+                                                    <br>
+                                                    <p>
+                                                        <a href="https://www.brother.co.uk/" target="_blank"><img height="40" src="images/footer-brother.png" width="108"></a>
+                                                    </p>
+                                                    <br>
+                                                    <p style="font-size: 14px; font-weight: 500;">
+                                                        <a style="color: #4a4a4a; text-decoration: none;" href="https://www.brother.co.uk/support/contact-us" target="_blank">Contact us</a> |
+                                                        <a style="color: #4a4a4a; text-decoration: none;" href="https://www.brother.co.uk/about-brother/privacy-policy" target="_blank">Privacy policy</a> |
+                                                        <a style="color: #4a4a4a; text-decoration: none;" href="http://brother-uk.info/brotheruk_prolz/Preference.aspx?p1=T051S321411116&amp;p=1" target="_blank">Manage your email preferences</a>
+                                                    </p>
+                                                    <br>
+                                                    <p style="font-size: 12px;">Brother UK Ltd. is a member of the Brother Group of Nagoya, Japan.</p>
+                                                    <p style="font-size: 12px;">Copyright © 1998-2018, Brother UK Ltd. All rights reserved.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td width="20">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
